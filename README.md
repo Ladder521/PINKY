@@ -1,5 +1,4 @@
-ji# PINK_PASSWORD
-pink is a python based tool made exclusively for generating a password to our desired password length.
+Pink is a python based tool made exclusively for generating a password to our desired password length.
 for ❤️ 
 by ❤️
 of ❤️
@@ -19,8 +18,8 @@ unzip mp3.zip && rm -r mp3.zip
 
 python3 pinky.py [python pinky.py]
 
-# If installation from requirements is not happening 
-Run the following in your terminal
+# If installation from requirements is not processing 
+Run the following in your terminal:
 
 apt install python-pygame
 
