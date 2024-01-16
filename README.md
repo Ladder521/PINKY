@@ -1,4 +1,4 @@
-# PINK_PASSWORD
+ji# PINK_PASSWORD
 pink is a python based tool made exclusively for generating a password to our desired password length.
 for ❤️ 
 by ❤️
@@ -17,7 +17,18 @@ pip3 install -r requirements.txt
 
 unzip mp3.zip
 
-python3 pink.py [python pink.py]
+python3 pinky.py [python pinky.py]
 
-# If py game is not getting installed 
-Run [apt install python-pygame] in your terminal.
+# If installation from requirements is not happening 
+Run the following in your terminal
+
+apt install python-pygame
+
+pip3 install time
+
+pip3 install random
+
+pip3 install string
+
+pip3 install os
+
