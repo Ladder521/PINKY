@@ -1,0 +1,1 @@
+run apt install python-pygame in your terminal
