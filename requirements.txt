@@ -1,4 +1,1 @@
-time
-string
 pygame
-random
