@@ -15,7 +15,7 @@ cd PINK_PASSWORD && ls
 
 pip3 install -r requirements.txt
 
-unzip mp3.zip
+unzip mp3.zip && rm -r mp3.zip
 
 python3 pinky.py [python pinky.py]
 
