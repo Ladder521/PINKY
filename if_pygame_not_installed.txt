@@ -1,1 +1,4 @@
-run apt install python-pygame in your terminal
+          Run 
+#apt install python-pygame
+#pip install os time random string
+     in your terminal
