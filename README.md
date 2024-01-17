@@ -23,6 +23,10 @@ Run the following in your terminal:
 
 apt install python-pygame
 
+pip3 install pygame
+
+pip3 install gtts
+
 pip3 install time
 
 pip3 install random
