@@ -144,7 +144,7 @@ def generate_password():
         message2 = password
         print_green(message1)
         print_purple(message2)
-        tts = gTTS(test=password, lang='en')
+        tts = gTTS(text=password, lang='en')
         tts.save("password.mp3")
         play_audio('/data/data/com.termux/files/home/PINK_PASSWORD/password.mp3')
         os.remove("password.mp3")
