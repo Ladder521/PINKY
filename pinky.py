@@ -1,8 +1,5 @@
-import os
-import time
-import random
-import string
-import pygame
+from gtts import gTTS
+import os, time, random, string, pygame
 
 #Initialize pygame mixer
 pygame.mixer.init()
