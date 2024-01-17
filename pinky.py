@@ -24,11 +24,11 @@ print("""
                               /   /__\\ /__\\   \\
                              |    \\ 0/ \\ 0/    |
                              \\     `/   \\`     /
-                              `-.  /-\"\"\"-\\  .-`           ._-.
-                                /  '.___.'  \\            //';\\\\
-                                \\     I     /           //  ;//
-                                 `;--'`'--;`            \\\\_;//
-                                   '.___.'               //-`
+                              `-.  /-\"\"\"-\\  .-`  
+                                /  '.___.'  \\       
+                                \\     I     /       
+                                 `;--'`'--;`        
+                                   '.___.'    
                                   ___| |___           .\"`-.
                                .-`  .---.  `-.       /     )
                               /   .'     '.   \\     /      )
@@ -147,6 +147,10 @@ def generate_password():
         message2 = password
         print_green(message1)
         print_purple(message2)
+        tts = gTTS(test=password, lang='en')
+        tts.save("password.mp3")
+        play_audio('/data/data/com.termux/files/home/PINK_PASSWORD/password.mp3)
+        os.remove("password.mp3")
         print()
 
     print_your_pass()
