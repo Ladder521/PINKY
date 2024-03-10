@@ -1,2 +1,6 @@
 pygame
 gtts
+os
+time
+string
+random
