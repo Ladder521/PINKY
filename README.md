@@ -16,7 +16,7 @@ pip3 install -r requirements.txt
 
 unzip mp3.zip && rm -r mp3.zip
 
-python3 pinky.py [python pinky.py]
+python3 balsley.py [python balsley.py]
 
 # If installation from requirements is not processing 
 Run the following in your terminal:
