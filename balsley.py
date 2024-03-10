@@ -36,9 +36,9 @@ print("""
                          (                -;    '-'
                           `-----------.___~;
 
-                                PINK Password
+                                  PINKY Pink
 
-                                Rudra-ReguluX
+                                   Rudra
           """)
 
 # Function to print text in yellow color
