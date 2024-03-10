@@ -1,16 +1,32 @@
+import threading, os, time, random, string, pygame
 from gtts import gTTS
-import os, time, random, string, pygame
 
 #Initialize pygame mixer
 pygame.mixer.init()
-os.system('clear')
 
 #Function to play audio
-def play_audio(file_path):
-    pygame.mixer.music.load(file_path)
-    pygame.mixer.music.play()
-    while pygame.mixer.music.get_busy():
-        pygame.time.Clock().tick(9)
+def play_audio(file_path, message=None):
+    if message:
+        print(message)
+    
+    def play_sound(file_path):
+        pygame.mixer.music.load(file_path)
+        pygame.mixer.music.play()
+        while pygame.mixer.music.get_busy():
+            pygame.time.Clock().tick(9)
+
+    audio_thread = threading.Thread(target=play_sound, args=(file_path,))
+    audio_thread.start()
+
+    if message:
+        # Wait for the audio to start playing
+        while not pygame.mixer.music.get_busy():
+            time.sleep(0.1)
+        # Print dots while audio is playing
+        while pygame.mixer.music.get_busy():
+            print(".", end='', flush=True)
+            time.sleep(1)
+        print()
 
 play_audio('/data/data/com.termux/files/home/PINKY/mp3/pink.mp3')
 print()
@@ -105,10 +121,10 @@ def generate_password():
     def print_length(passlen):
         message1 = str(passlen)
         message2 = " Characters Choosed "
-        message3 = " ✓✓✓ "
-        print_green(message3)
+        message3 = " [!] "
+        print_red(message3)
         print_white(message1)
-        print_red(message2)
+        print_green(message2)
         print()
 
     print_length(passlen)
@@ -126,7 +142,7 @@ def generate_password():
 
 
     def print_arrange():
-        message1 = " Arrangement Of Characters ..."
+        message1 = "     Arrangement Of Characters ..."
         message2 = "..."
         message3 = "...✓✓✓ COMPLETE "
         print_red(message1)
