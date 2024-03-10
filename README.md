@@ -8,7 +8,7 @@ apt update && apt upgrade -y
 
 apt install python3 git pip3
 
-git clone https://github.com/Ladder521/PINK_PASSWORD.git
+git clone https://github.com/Ladder521/PINKY.git
 
 cd PINK_PASSWORD && ls
 
