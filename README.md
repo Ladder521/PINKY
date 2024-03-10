@@ -10,7 +10,7 @@ apt install python3 git pip3
 
 git clone https://github.com/Ladder521/PINKY.git
 
-cd PINK_PASSWORD && ls
+cd PINKY && ls
 
 pip3 install -r requirements.txt
 
