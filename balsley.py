@@ -12,7 +12,7 @@ def play_audio(file_path):
     while pygame.mixer.music.get_busy():
         pygame.time.Clock().tick(9)
 
-play_audio('/data/data/com.termux/files/home/PINK_PASSWORD/mp3/pink.mp3')
+play_audio('/data/data/com.termux/files/home/PINKY/mp3/pink.mp3')
 print()
 print("""
                              .--.            .--.
@@ -38,7 +38,7 @@ print("""
 
                                   PINKY Pink
 
-                                   Rudra
+                                   LADDER521
           """)
 
 # Function to print text in yellow color
@@ -79,14 +79,14 @@ def print_green(text):
 
 def print_thank_you():
     message = " [~] THANK YOU [~] "
-    play_audio('/data/data/com.termux/files/home/PINK_PASSWORD/mp3/thank_you.mp3')
+    play_audio('/data/data/com.termux/files/home/PINKY/mp3/thank_you.mp3')
     print_red(message)
-    play_audio('/data/data/com.termux/files/home/PINK_PASSWORD/mp3/meet.mp3')
+    play_audio('/data/data/com.termux/files/home/PINKY/mp3/meet.mp3')
     print()
 
 
 def generate_password():
-    play_audio('/data/data/com.termux/files/home/PINK_PASSWORD/mp3/length.mp3')
+    play_audio('/data/data/com.termux/files/home/PINKY/mp3/length.mp3')
     passlen = int(input("Enter the length of password: "))
     characters = string.ascii_letters + string.digits + string.punctuation
     password = ''.join(random.sample(characters, passlen))
@@ -131,7 +131,7 @@ def generate_password():
         message3 = "...✓✓✓ COMPLETE "
         print_red(message1)
         print_yellow(message2)
-        play_audio('/data/data/com.termux/files/home/PINK_PASSWORD/mp3/arrange.mp3')
+        play_audio('/data/data/com.termux/files/home/PINKY/mp3/arrange.mp3')
         print_green(message3)
         print()
 
@@ -146,7 +146,7 @@ def generate_password():
         print_purple(message2)
         tts = gTTS(text=password, lang='en')
         tts.save("password.mp3")
-        play_audio('/data/data/com.termux/files/home/PINK_PASSWORD/password.mp3')
+        play_audio('/data/data/com.termux/files/home/PINKY/password.mp3')
         os.remove("password.mp3")
         print()
 
@@ -162,15 +162,15 @@ def generate_password():
         m3 = "Strong"
         if passlen < 8:
             strength += m1
-            play_audio('/data/data/com.termux/files/home/PINK_PASSWORD/mp3/weak.mp3')
+            play_audio('/data/data/com.termux/files/home/PINKY/mp3/weak.mp3')
             print_red(strength)
         elif 8 <= passlen < 12:
             strength += m2
-            play_audio('/data/data/com.termux/files/home/PINK_PASSWORD/mp3/moderate.mp3')
+            play_audio('/data/data/com.termux/files/home/PINKY/mp3/moderate.mp3')
             print_yellow(strength)
         else:
             strength += m3
-            play_audio('/data/data/com.termux/files/home/PINK_PASSWORD/mp3/strong.mp3')
+            play_audio('/data/data/com.termux/files/home/PINKY/mp3/strong.mp3')
             print_green(strength)
         print()
 
@@ -179,7 +179,7 @@ def generate_password():
 
 while True:
     print()
-    play_audio('/data/data/com.termux/files/home/PINK_PASSWORD/mp3/EV.mp3')
+    play_audio('/data/data/com.termux/files/home/PINKY/mp3/EV.mp3')
     user_input = input("Enter 'G' to generate a password or 'E' to exit: ")
     if user_input.lower() == 'g':
         print()
