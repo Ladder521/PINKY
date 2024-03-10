@@ -1,9 +1,9 @@
-Pink is a python based tool made exclusively for generating a password to our desired password length.
+Pinky pink is a python based tool made exclusively for generating a password to our desired password length.
 for ❤️ 
 by ❤️
 of ❤️
 
-# Installation and Using PINK_PASSWORD
+# Installation and Using PINKY
 apt update && apt upgrade -y
 
 apt install python3 git pip3
