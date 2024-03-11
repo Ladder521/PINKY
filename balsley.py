@@ -3,6 +3,7 @@ from gtts import gTTS
 
 #Initialize pygame mixer
 pygame.mixer.init()
+os.system('clear')
 
 #Function to play audio
 def play_audio(file_path, message=None):
