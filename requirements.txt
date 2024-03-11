@@ -4,3 +4,4 @@ os
 time
 string
 random
+colorama
