@@ -17,8 +17,6 @@ pip3 install -r requirements.txt
 unzip mp3.zip && rm -r mp3.zip
 
 python3 balsley.py
-      OR
-python3 pinky.py
 
 # If installation from requirements is not processing 
 Run the following in your terminal:
@@ -26,8 +24,6 @@ Run the following in your terminal:
 apt install python-pygame
 
 pip3 install pygame
-
-pip install colorama
 
 pip3 install gtts
 
